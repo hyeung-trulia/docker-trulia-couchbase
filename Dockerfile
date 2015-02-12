@@ -1,4 +1,5 @@
 From ubuntu:12.04
+### this Dockerfile is heavily borrowed from jamesdbloom / couchbase, the only change is the version of couchbase
 
 MAINTAINER Hinling Yeung "hyeung@trulia.com"
 
@@ -14,7 +15,7 @@ RUN dpkg -i /tmp/couchbase-server-enterprise_2.2.0_x86_64.deb
 RUN rm /tmp/couchbase-server-enterprise_2.2.0_x86_64.deb
 
 # add start scripts
-ADD start-couchbase.sh /start-couchbase.sh
+ADD start_couchbase.sh /start_couchbase.sh
 
 # Expose Web Administration Port, Couchbase API Port & Internal/External Bucket Port
 EXPOSE 8091 8092 11210
