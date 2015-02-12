@@ -19,4 +19,3 @@ ADD start-couchbase.sh /start-couchbase.sh
 # Expose Web Administration Port, Couchbase API Port & Internal/External Bucket Port
 EXPOSE 8091 8092 11210
 
-CMD ["/start-couchbase.sh"] 
